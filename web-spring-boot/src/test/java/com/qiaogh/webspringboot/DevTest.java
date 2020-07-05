@@ -6,6 +6,6 @@ public class DevTest {
 
     @Test
     public void test() {
-
+        System.out.println( "Hello Git" );
     }
 }
