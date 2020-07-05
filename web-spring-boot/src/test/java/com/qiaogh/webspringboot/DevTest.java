@@ -8,5 +8,6 @@ public class DevTest {
     public void test() {
         System.out.println( "Hello Git" );
         System.out.println( "Hello Git" );
+        System.out.println( "Hello Git" );
     }
 }
