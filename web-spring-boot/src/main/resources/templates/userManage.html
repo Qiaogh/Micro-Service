@@ -1,0 +1,30 @@
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>用户管理</title>
+</head>
+<body>
+
+<table border="1" cellspacing="0">
+    <tr>
+        <th>编号</th>
+        <th>用户名</th>
+        <th>用户名</th>
+        <th>年龄</th>
+        <th>标签</th>
+        <th>出生日期</th>
+        <th>创建时间</th>
+    </tr>
+    <tr th:each="user,users : ${users}" >
+        <td th:text="${user.id}"></td>
+        <td th:text="VIP+${user.name}"></td>
+        <td th:text="|VIP,${user.name}|"></td>
+        <th th:text="${user.age}"></th>
+        <th th:if="${user.age > 33}">老腊肉</th>
+        <th th:if="${user.age > 18 && user.age <= 33}">咸鱼</th>
+        <th th:if="${user.age <= 18}">小鲜肉</th>
+        <th th:text="${#dates.format(user.birthday, 'yyyy-MM-dd')}"></th>
+        <th th:text="${#dates.format(user.entryTime, 'yyyy-MM-dd HH:mm:ss')}"></th>
+    </tr>
+</table>
+</body>
+</html>

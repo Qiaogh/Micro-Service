@@ -1,0 +1,8 @@
+# 日志等级
+logging:
+  level:
+    root: ERROR
+
+paths:
+  imageServer: http://image.qiaogh.com
+  emailServer: http://email.qiaogh.com

@@ -1,0 +1,19 @@
+# 日志等级
+logging:
+  level:
+    root: ERROR
+  # 控制目录输出到文件
+  file:
+    path: /Users/qiaogh/Projects/micro-service/web-spring-boot/target/logs
+
+# 数据源
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.1.30:3306/micro_service?useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+paths:
+  imageServer: http://image.qiaogh.com
+  emailServer: http://email.qiaogh.com

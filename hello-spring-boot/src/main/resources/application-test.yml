@@ -1,0 +1,8 @@
+# 日志等级
+logging:
+  level:
+    root: DEBUG
+
+paths:
+  imageServer: http://test.image.qiaogh.com
+  emailServer: http://test.email.qiaogh.com
